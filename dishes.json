@@ -1,0 +1,23 @@
+{
+  "dal": [
+    {"id": "dal.wash",   "name": "Wash the dal",                     "minutes": 3,  "hands": true,  "burner": false},
+    {"id": "dal.cook",   "name": "Pressure cook the dal",            "minutes": 25, "hands": false, "burner": true,  "after": ["dal.wash"]},
+    {"id": "dal.chop",   "name": "Chop onion, tomato and garlic",    "minutes": 8,  "hands": true,  "burner": false},
+    {"id": "dal.tadka",  "name": "Make the tadka and mix into dal",  "minutes": 7,  "hands": true,  "burner": true,  "after": ["dal.cook", "dal.chop"]}
+  ],
+  "rice": [
+    {"id": "rice.wash",  "name": "Wash the rice",                    "minutes": 3,  "hands": true,  "burner": false},
+    {"id": "rice.cook",  "name": "Cook the rice",                    "minutes": 18, "hands": false, "burner": true,  "after": ["rice.wash"]},
+    {"id": "rice.rest",  "name": "Let the rice rest, covered",       "minutes": 5,  "hands": false, "burner": false, "after": ["rice.cook"]}
+  ],
+  "sabzi": [
+    {"id": "sabzi.chop",   "name": "Chop the vegetables",            "minutes": 12, "hands": true,  "burner": false},
+    {"id": "sabzi.saute",  "name": "Saute with spices",              "minutes": 6,  "hands": true,  "burner": true,  "after": ["sabzi.chop"]},
+    {"id": "sabzi.simmer", "name": "Cover and simmer",               "minutes": 15, "hands": false, "burner": true,  "after": ["sabzi.saute"]}
+  ],
+  "roti": [
+    {"id": "roti.dough", "name": "Knead the dough",                  "minutes": 8,  "hands": true,  "burner": false},
+    {"id": "roti.rest",  "name": "Rest the dough",                   "minutes": 20, "hands": false, "burner": false, "after": ["roti.dough"]},
+    {"id": "roti.cook",  "name": "Roll and cook the rotis",          "minutes": 14, "hands": true,  "burner": true,  "after": ["roti.rest"]}
+  ]
+}
